@@ -1,0 +1,32 @@
+$primary: #33b5e5;
+$text_fields: #000;
+.headerContainer {
+    nav {
+        // background-image: linear-gradient(90deg, #2f2f2f, #cacaca);
+        background-color:#fbfafa;
+        padding: 10px;
+        .navbar-brand {
+            span {
+                color: $text_fields;
+                font-size: 16px;
+            }
+        }
+    }
+}
+.nav-link {
+    color: $text_fields;
+    font-size: 17px;
+}
+.sign-btn {
+    color: #fff;
+    background-color: #33b5e5;
+    border: 1px solid #f8ffff;
+    padding: 5px 30px;
+    border-radius: 15px;
+    width: 100%;
+    font-size: 17px;
+    
+}
+.navbar-brand img {
+margin: 0 0.6rem 0 0;
+}
