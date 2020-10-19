@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-more-property',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MorePropertyComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
-
+  onLoadDetailsPage() {
+    this.router.navigate(['/property-details']);
+}
 }

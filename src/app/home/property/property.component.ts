@@ -12,7 +12,11 @@ export class PropertyComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
   onLoadMorePage () {
     this.router.navigate(['/more-property']);
   }
+  onLoadDetailsPage() {
+    this.router.navigate(['/property-details']);
+}
 }

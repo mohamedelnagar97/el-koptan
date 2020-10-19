@@ -1,0 +1,94 @@
+$textColor: #212529;
+$primaryColor:#33b5e5;
+$primaryDark: #2855b2;
+$footerColor:#1c2331;
+$secondryColor:#fff;
+$privateText:#fafafa;
+$specialColor:#ff0000;
+.sign-up {
+    height: 100%;
+}
+.sign-up h3 {
+    text-align: center;
+    margin: 1.5rem 0 1.5rem 0;
+}
+.sign-up a {
+    color: $specialColor;
+    text-decoration: underline;
+    text-align: center;
+    padding: 1rem 0 2rem 0;
+}
+.sign-head {
+    color: $primaryColor;
+}
+.contain-sign-up {
+    width: 450px;
+    margin: 0px auto; 
+}
+.sign-content form {
+    border: 1px solid $primaryColor;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 2rem 0 2rem 0;
+
+}
+form button {
+    color: $secondryColor;
+    background-color:$primaryColor;
+    border: 1px solid $privateText;
+    border-radius: 15px;
+    width: 100%;
+    font-size: 17px;
+    padding: 10px 30px;
+    margin: 1rem 0 1rem 0;
+}
+.form-element {
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 5px 10px 5px;
+    margin: 0.7rem 0 0.7rem 0;
+}
+b {
+    color:$primaryColor;
+}
+
+/* media */
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1199px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 991px) {
+    
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+    .sign-head {
+        text-align: center;
+    }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 575px) {
+    
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 479px) {
+    .contain-sign-up {
+        width: 300px; 
+    }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 360px) {
+    .contain-sign-up {
+        width: 275px; 
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 319px) {
+}
+

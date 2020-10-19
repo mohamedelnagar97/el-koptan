@@ -5,17 +5,13 @@ $footerColor:#1c2331;
 $secondryColor:#fff;
 $privateText:#fafafa;
 $specialColor:#ff0000;
-
-.contain-footer {
-    background-color: $footerColor;
-    padding: 2rem 0 2rem 0;
-}
-h3,h4,a {
-    color:$privateText;;
-    font-weight: 300;
-}
-a {
-    text-decoration: none;
+.collapse-btn {
+    background-color:$secondryColor;
+    color: #33b5e5;
+    border: 1px solid $primaryColor;
+    border-radius: 10px;
+    width: 70%;
+    margin: 1rem 0 3rem 0;
 }
 
 /* media */
@@ -26,12 +22,21 @@ a {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 991px) {
-    
+    .collapse-btn {
+        width: 100%;
+        margin: 1rem 0 1rem 0;
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
-    
+    .collapse-btn {
+        width: 55%;
+        padding: 5px;
+    }
+    .side-bar {
+        text-align: center;
+    }
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 575px) {
@@ -40,7 +45,9 @@ a {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 479px) {
-    
+    .collapse-btn {
+        width: 70%;
+    }
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 360px) {
@@ -50,3 +57,4 @@ a {
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 319px) {
 }
+
