@@ -17,16 +17,17 @@ import { ImpPropertyComponent } from './home/imp-property/imp-property.component
 import { ContactUsComponent } from './shared/pages/contact-us/contact-us.component';
 import { AboutUsComponent } from './shared/pages/about-us/about-us.component';
 import { MorePropertyComponent } from './more-property/more-property.component';
+import { HttpClientModule } from '@angular/common/http';
 
-const appRoutes: Routes =[
+const appRoutes: Routes = [
 
-     { path:'',component: HomeComponent },
-     { path:'contact-us',component: ContactUsComponent },
-     { path:'about-us',component: AboutUsComponent },
-     { path:'sign-in',component: SignInComponent },
-     { path:'sign-up',component: SignUpComponent },
-     { path:'property-details',component: PropertyDetailsComponent },
-     { path:'more-property',component: MorePropertyComponent },
+  { path: '', component: HomeComponent },
+  { path: 'contact-us', component: ContactUsComponent },
+  { path: 'about-us', component: AboutUsComponent },
+  { path: 'sign-in', component: SignInComponent },
+  { path: 'sign-up', component: SignUpComponent },
+  { path: 'property-details', component: PropertyDetailsComponent },
+  { path: 'more-property', component: MorePropertyComponent },
 
 
 ]
@@ -51,8 +52,9 @@ const appRoutes: Routes =[
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     RouterModule.forRoot(appRoutes)
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]

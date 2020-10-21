@@ -1,3 +1,5 @@
+import { PropertyBean } from './../../services/common/common.service';
+import { CommonItemListService } from './../../services/common/common-item-list.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -8,11 +10,14 @@ import { Router } from '@angular/router';
 })
 export class PropertyComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, public commonItemList: CommonItemListService<PropertyBean>) {
+    this.commonItemList.common.name = 'properties';
+  }
 
   ngOnInit(): void {
+    this.commonItemList.refreshData();
   }
-  onLoadMorePage () {
+  onLoadMorePage() {
     this.router.navigate(['/more-property']);
   }
 }
