@@ -17,15 +17,28 @@ import { ImpPropertyComponent } from './home/imp-property/imp-property.component
 import { ContactUsComponent } from './shared/pages/contact-us/contact-us.component';
 import { AboutUsComponent } from './shared/pages/about-us/about-us.component';
 import { MorePropertyComponent } from './more-property/more-property.component';
+<<<<<<< HEAD
+import { HttpClientModule } from '@angular/common/http';
+=======
 import { DetailsSideBarComponent } from './property-details/details-side-bar/details-side-bar.component';
 import { DetailsInfoComponent } from './property-details/details-info/details-info.component';
 import { DetailsSliderComponent } from './property-details/details-slider/details-slider.component';
 import { NotFoundComponent } from './shared/pages/not-found/not-found.component';
 
 
+>>>>>>> 582f59fbc391d78528d3afd583163cb42f43155d
 
-const appRoutes: Routes =[
+const appRoutes: Routes = [
 
+<<<<<<< HEAD
+  { path: '', component: HomeComponent },
+  { path: 'contact-us', component: ContactUsComponent },
+  { path: 'about-us', component: AboutUsComponent },
+  { path: 'sign-in', component: SignInComponent },
+  { path: 'sign-up', component: SignUpComponent },
+  { path: 'property-details', component: PropertyDetailsComponent },
+  { path: 'more-property', component: MorePropertyComponent },
+=======
      { path:'',component: HomeComponent },
      { path:'contact-us',component: ContactUsComponent },
      { path:'about-us',component: AboutUsComponent },
@@ -35,6 +48,7 @@ const appRoutes: Routes =[
      { path:'more-property',component: MorePropertyComponent },
      { path: 'not-found', component: NotFoundComponent },
      { path: '**', redirectTo: '/not-found' }
+>>>>>>> 582f59fbc391d78528d3afd583163cb42f43155d
 
 
 ]
@@ -65,8 +79,9 @@ const appRoutes: Routes =[
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     RouterModule.forRoot(appRoutes)
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]

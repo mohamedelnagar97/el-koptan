@@ -1,25 +1,92 @@
-.contact-us {
-    padding: 2rem 0 2rem 0;
-}
+$textColor: #212529;
+$primaryColor:#33b5e5;
+$primaryDark: #2855b2;
+$footerColor:#1c2331;
+$secondryColor:#fff;
+$privateText:#fafafa;
+$specialColor:#ff0000;
 .contact-left {
+    span {
+        color: $specialColor;
+    }
     padding: 5rem 0 0 0;
 }
-.contact-left span {
-    color: red;
-}
 .contact-right form {
-    border: 1px solid #33b5e5;
-    padding: 1rem;
-    border-radius: 15px;
 
+    .form-element {
+        width: 100%;
+        border: 0;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    
+    button {
+        color:$secondryColor;
+        background-color:$primaryColor;
+        border: 1px solid $privateText;
+        border-radius: 15px;
+        width: 100%;
+        font-size: 17px;
+        padding: 5px 30px;
+        margin: 2rem 0 1rem 0;
+    }
+
+    border: 1px solid $primaryColor;
+    border-radius: 15px;
+    padding: 1rem;
 }
 .contact-right h4,.contact-top h2 {
-    color: #33b5e5;
+    color: $primaryColor;
     margin: 0 0 1rem 0;
 }
-.form-element {
-    width: 100%;
-    border: 0;
-    border-radius: 10px;
-    padding: 5px;
+
+
+
+/* media */
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1199px) {
 }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 991px) {
+    
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+    
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 575px) {
+    .contact-left {
+        padding:1rem;
+    }
+    .contact-right {
+        form {
+            width: 90%;
+        }
+        padding: 1rem 5rem 3rem 5rem;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 479px) {
+    .contact-right {
+        form {
+            width: 100%;
+        }
+        padding: 3rem 3rem 3rem 3rem;
+    }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 360px) {
+    .contact-right {
+        padding: 3rem 1rem 3rem 1rem;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 319px) {
+}
+

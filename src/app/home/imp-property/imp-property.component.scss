@@ -1,31 +1,86 @@
-.imp-prop {
-    padding: 5rem 0 2rem 0;
-}
-.imp-top  {
-padding: 0 0 2rem 0;
-}
+$textColor: #212529;
+$primaryColor:#33b5e5;
+$primaryDark: #2855b2;
+$footerColor:#1c2331;
+$secondryColor:#fff;
+$privateText:#fafafa;
+$specialColor:#ff0000;
+
 .box-top img {
-    width: 90%;
+    width: 100%;
     height:250px;
 }
 .box{
-    // box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
-    padding: 5px 0 5px 0;
     margin: 0 0 2rem 0;
+    background-color: $secondryColor;
+}
+.box-bottom {
+    padding: 1rem;
 }
 .box-bottom h2 {
     padding: 1rem 0 .2rem 0;
 }
 .box-bottom span {
-    color: red;
+    color:$specialColor;
 }
 .box-bottom button {
+    color: $privateText;
+    background-color: $primaryColor;
     padding: 6px 12px 6px 12px;
-    color: #fafafa;
-    background-color: #33b5e5;
     border: 0;
     border-radius: 10px;
 }
-.box .box-bottom button:hover {
-    background-color:#33b5e5;
+.box button:hover {
+    color: $primaryColor;
+    background-color:$secondryColor;
+    border:  1px solid $primaryColor;
+}
+
+/* media */
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1199px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 991px) {
+    
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+    .box-top img {
+        height: 200px;
+    }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 575px) {
+    .box {
+        margin: 0 auto;
+        width: 70%;
+        margin-bottom: 3rem;
+    }
+    .imp-top h1{
+        font-size: 30px;
+       text-align: center;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 479px) {
+    .box {
+        width: 90%;
+    }
+    .imp-top h1{
+        font-size: 25px;
+       text-align: center;
+    }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 360px) {
+    
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 319px) {
 }

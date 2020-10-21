@@ -17,24 +17,17 @@ import { ImpPropertyComponent } from './home/imp-property/imp-property.component
 import { ContactUsComponent } from './shared/pages/contact-us/contact-us.component';
 import { AboutUsComponent } from './shared/pages/about-us/about-us.component';
 import { MorePropertyComponent } from './more-property/more-property.component';
-import { DetailsSideBarComponent } from './property-details/details-side-bar/details-side-bar.component';
-import { DetailsInfoComponent } from './property-details/details-info/details-info.component';
-import { DetailsSliderComponent } from './property-details/details-slider/details-slider.component';
-import { NotFoundComponent } from './shared/pages/not-found/not-found.component';
+import { HttpClientModule } from '@angular/common/http';
 
+const appRoutes: Routes = [
 
-
-const appRoutes: Routes =[
-
-     { path:'',component: HomeComponent },
-     { path:'contact-us',component: ContactUsComponent },
-     { path:'about-us',component: AboutUsComponent },
-     { path:'sign-in',component: SignInComponent },
-     { path:'sign-up',component: SignUpComponent },
-     { path:'property-details',component: PropertyDetailsComponent },
-     { path:'more-property',component: MorePropertyComponent },
-     { path: 'not-found', component: NotFoundComponent },
-     { path: '**', redirectTo: '/not-found' }
+  { path: '', component: HomeComponent },
+  { path: 'contact-us', component: ContactUsComponent },
+  { path: 'about-us', component: AboutUsComponent },
+  { path: 'sign-in', component: SignInComponent },
+  { path: 'sign-up', component: SignUpComponent },
+  { path: 'property-details', component: PropertyDetailsComponent },
+  { path: 'more-property', component: MorePropertyComponent },
 
 
 ]
@@ -54,19 +47,14 @@ const appRoutes: Routes =[
     ImpPropertyComponent,
     ContactUsComponent,
     AboutUsComponent,
-    MorePropertyComponent,
-    DetailsSideBarComponent,
-    DetailsInfoComponent,
-    DetailsSliderComponent,
-    NotFoundComponent,
-    
-    
+    MorePropertyComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     RouterModule.forRoot(appRoutes)
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]

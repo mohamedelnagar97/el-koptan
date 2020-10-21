@@ -1,57 +1,109 @@
-.prop {
-    padding: 1rem 0 2rem 0 ;
-}
-.prop-head {
-    padding: 1rem 0 0 0;
+$textColor: #212529;
+$primaryColor:#33b5e5;
+$primaryDark: #2855b2;
+$footerColor:#1c2331;
+$secondryColor:#fff;
+$privateText:#fafafa;
+$specialColor:#ff0000;
+.Box {
+    background-color: $secondryColor;
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+    padding: 1rem;
+    border-radius: 25px;   
 }
 .Box-top img {
-    width: 85%;
-    height: 90%;
-    border-radius: 15px;
+    width: 100%;
+    border-radius: 20px;
 }
-.Box {
-    margin: 2rem 0 1rem 0;
-    padding: 2rem;
-}
-.Box-info h2 {
- padding: 1rem 0 0 0;
- text-align: center;
-}
-.Box-info span {
-    color: red;
-}
-.Box-info h6 {
-    text-decoration: underline;
-}
-.Box-info p {
-    text-align: center;
+.Box-info {
+    h2 {
+        color: $primaryColor;
+        margin: 1.2rem 0 .5rem 0;
+    }
+    span {
+        color:$specialColor;
+    }
+    h6 {
+        text-decoration: underline;
+    }
+     p {
+        text-align: center;
+    }
 }
 .Box-dtails {
     text-align: center;
 }
 .Box-dtails button {
-    padding: 6px 12px 6px 12px;
-    color: #fafafa;
-    background-color: #33b5e5;
+    color:$privateText;
+    background-color:$primaryColor;
     border: 0;
     border-radius: 10px;
     width: 75%;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 6px 12px 6px 12px;
+    margin: 1rem 0 1rem 0;
 }
 .Box-dtails button:hover ,.show-more button:hover {
-    background-color:#33b5e5;
+     color: $primaryColor;
+     background-color:$secondryColor;
+     border: 1px solid $primaryColor;
 }
 .show-more {
-    padding-top: 15rem;
+    button {
+        color: $privateText;
+        background-color: $primaryColor;
+        border: 0;
+        border-radius: 10px;
+        width: 50%;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 6px 12px 6px 12px;
+    }
     text-align: center;
+    padding-top: 15rem;
 }
-.show-more button {
-    padding: 6px 12px 6px 12px;
-    color: #fafafa;
-    background-color: #33b5e5;
-    border: 0;
-    border-radius: 10px;
-    width: 50%;
-    font-size: 20px;
-    font-weight: 700;
+/* media */
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1199px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 991px) {
     
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+    .prop-head h1 {
+        text-align: center;
+    }
+    .show-more {
+        button {
+          margin: 0 0 3rem 0;
+        }
+        padding: 0;
+    }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 575px) {
+    
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 479px) {
+    
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 360px) {
+    .Box-info h2 {
+        font-size: 25px;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 319px) {
 }

@@ -1,0 +1,113 @@
+$textColor: #212529;
+$primaryColor:#33b5e5;
+$primaryDark: #2855b2;
+$footerColor:#1c2331;
+$secondryColor:#fff;
+$privateText:#fafafa;
+$specialColor:#ff0000;
+.details-top h2 {
+    color: $primaryColor;
+    margin: 0 0 1rem 0;
+}
+.old-price {
+    text-decoration: line-through;
+}
+.new-price {
+    color: $specialColor;
+    font-weight: bold;
+}
+.details-box {
+    background-color: $secondryColor;
+    border: 1px solid $primaryColor;
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem 0 4rem 0;
+}
+// form
+.book-form {
+
+    form {
+
+        button {
+            color:$secondryColor;
+            background-color: $primaryColor;
+            border: 1px solid $privateText;
+            border-radius: 15px;
+            width: 100%;
+            font-size: 17px;
+            padding: 5px 30px;
+            margin: 2rem 0 1rem 0;
+        }
+        button:hover {
+            color: $primaryColor;
+            background-color:$secondryColor;
+            border: 1px solid $primaryColor;
+        }
+        label {
+            margin: .5rem 0 0.3rem 0;
+        }
+
+        border: 1px solid $primaryColor;
+        border-radius: 15px;
+        padding: 1rem;
+        margin: 3rem 0 3rem 0;
+    }
+
+    width: 450px;
+    margin: 0 auto;
+}
+ 
+.book-head {
+    color:$primaryColor;
+    text-decoration: underline ;
+}
+.form-element {
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+
+/* media */
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1199px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 991px) {
+    
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+    .book-head {
+        text-align: center;
+    }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 575px) {
+    .book-form {
+        width: 400px;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 479px) {
+    .book-form {
+        width: 300px;
+    }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 360px) {
+    .book-form {
+        width: 280px;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 319px) {
+}
+

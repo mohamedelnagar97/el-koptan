@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-imp-property',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImpPropertyComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
-
+  onLoadDetailsPage(){
+    this.router.navigate(['/property-details']);
+  }
 }

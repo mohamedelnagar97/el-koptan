@@ -1,0 +1,20 @@
+$textColor: #212529;
+$primaryColor:#33b5e5;
+$primaryDark: #2855b2;
+$footerColor:#1c2331;
+$secondryColor:#fff;
+$privateText:#fafafa;
+$specialColor:#ff0000;
+.about-head,.about-content {
+    background-color:$secondryColor;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 0 0 2rem 0;
+}
+.about-head h1 {
+    color:$primaryColor;
+}
+.about-content h3 {
+    color: $primaryColor;
+    margin: 1rem 0 2rem 0;
+}
